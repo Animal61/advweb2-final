@@ -27,7 +27,26 @@
 	<h1>Furry Friends</h1>
 </header>
 <main>
-	
+	<h2>Schedule a visit</h2>
+	<form id="schedule" method="post" action="">
+		<label for="name">Name:</label>
+		<input type="text" name="name" placeholder="Enter your name" /><br />
+		<label for="phone">Phone:</label>
+		<input type="tel" name="phone" placeholder="xxx-xxx-xxxx" /><br />
+		<label for="email">Email:</label>
+		<input type="email" name="email" placeholder="Enter your email address" /><br />
+		<label for="service">Service(s) request:</label><br />
+		<input type="checkbox" name="service" value="walking">Walking<br />
+		<input type="checkbox" name="service" value="drop-in">Drop-in<br />
+		<input type="checkbox" name="service" value="walking">Boarding<br />
+		<input type="checkbox" name="service" value="drop-in">Daycare<br />
+		<label for="start">Start date</label>
+		<input type="date" name="start"><br />
+		<label for="end">End date</label>
+		<input type="date" name="end"><br />
+		<button type="submit">Submit</button>
+		<button type="reset">Reset</button>
+	</form>
 </main>
 <footer>
 	<div class="left-50">
