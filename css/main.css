@@ -2,3 +2,15 @@ html {
     font-family: 'Permanent Marker', cursive;
     font-family: 'Kurale', serif;
 }
+
+body {
+    max-width: 1600px;
+    margin: auto;
+    padding: 0 10px;
+}
+
+img {
+    width: 90%;
+    margin: 0 5%;
+    max-width: 400px;
+}
