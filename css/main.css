@@ -7,10 +7,47 @@ body {
     max-width: 1600px;
     margin: auto;
     padding: 0 10px;
+    background: #ededef;
+}
+
+header,
+footer {
+    background-color: #1bbcb6;
+}
+
+h1 {
+    font-family: Permanent Marker;
+    color: #d16d79;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #000000;
+    padding: 0 3%;
+    font-size: 3em;
+    text-align: center;
+}
+
+h2 {
+    font-family: Kurale;
+    color: #252f48;
+    font-size: 2em;
+    padding: 0 3%;
+}
+
+h3 {
+    color: #d16d79;
+    font-family: Permanent Marker;
+    font-size: 1.5em;
+    padding: 0 3%;
+}
+
+p {
+    font-family: Kurale;
+    color: #252f48;
+    padding: 0 3%;
 }
 
 img {
-    width: 90%;
-    margin: 0 5%;
+    width: 94%;
+    margin: auto;
     max-width: 400px;
+    padding: 0 3%;
 }
