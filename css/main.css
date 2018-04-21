@@ -4,7 +4,6 @@ html {
 }
 
 body {
-    max-width: 1600px;
     margin: auto;
     padding: 0 10px;
     background: #ededef;
@@ -12,6 +11,7 @@ body {
 
 header,
 footer {
+    padding: 0 3%;
     background-color: #1bbcb6;
 }
 
@@ -48,6 +48,45 @@ p {
 img {
     width: 94%;
     margin: auto;
-    max-width: 400px;
     padding: 0 3%;
+}
+
+/* #walking,
+#drop-in,
+#day-care {
+    width: 32%;
+    display: inline-block;
+} */
+
+.center {
+    margin: auto;
+    width: 94%;
+    padding: 0 2%;
+}
+
+/* Media Queries */
+@media (min-width: 800px) {
+
+    .left-50,
+    .right-50 {
+        display: inline-block;
+        width: 39%;
+        padding: 1% 5%;
+    }
+
+    #walking,
+    #drop-in,
+    #day-care {
+        width: 32%;
+        display: inline-block;
+    }
+
+    #walking,
+    #drop-in {
+        margin-left: 1%;
+    }
+
+    #day-care {
+        margin-right: 1%;
+    }
 }
