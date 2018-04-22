@@ -214,7 +214,8 @@ footer ul li a:hover {
         margin-right: 1%;
     }
 
-    section#schedule {
+    section#schedule,
+		section#about {
         display: inline-block;
         width: 31%;
         float: left;
