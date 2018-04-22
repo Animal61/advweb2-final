@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<title>Advanced Web 2 Final Project</title>
 		<meta name="description" content="">
-		<meta name="viewport" content="device=device-width, initial-scale=1.0" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 		<link rel="stylesheet" href="css/vendor/normalize.min.css">
 		<link rel="stylesheet" href="css/main.css">
@@ -50,15 +50,24 @@
 	<section id="schedule">
 		
 	<h2>Schedule a visit</h2>
-	<form id="request" method="post" action="">
+<div class="bs-callout bs-callout-warning hidden">
+	<h4>Oh snap!</h4>
+	<p>This form seems to be invalid :(</p>
+</div>
+
+<div class="bs-callout bs-callout-info hidden">
+	<h4>Yay!</h4>
+	<p>Everything seems to be ok :)</p>
+</div>
+	<form id="request" method="post" action="" data-parsley-validate>
 		<label for="name">Name:</label>
-		<input type="text" name="name" placeholder="Enter your name" /><br />
+		<input type="text" name="name" placeholder="Enter your name"  required="" /><br />
 		<label for="phone">Phone:</label>
-		<input type="tel" name="phone" placeholder="xxx-xxx-xxxx" /><br />
+		<input type="tel" name="phone" placeholder="xxx-xxx-xxxx"  required="" /><br />
 		<label for="email">Email:</label>
-		<input type="email" name="email" placeholder="Enter your email address" /><br />
+		<input type="email" name="email" placeholder="Enter your email address" data-parsley-trigger="change" required="" /><br />
 		<label for="service">Service(s) request:</label><br />
-		<input type="checkbox" name="service" value="walking">Walking<br />
+		<input type="checkbox" name="service" value="walking" data-parsely-mincheck="1">Walking<br />
 		<input type="checkbox" name="service" value="drop-in">Drop-in<br />
 		<input type="checkbox" name="service" value="walking">Boarding<br />
 		<input type="checkbox" name="service" value="drop-in">Daycare<br />
@@ -66,8 +75,8 @@
 		<input type="date" name="start"><br />
 		<label for="end">End date</label>
 		<input type="date" name="end"><br />
-		<button type="submit">Submit</button>
-		<button type="reset">Reset</button>
+		<button type="submit" value="Submit">Submit</button>
+		<button type="reset" value="Reset">Reset</button>
 	</form>
 	
 </section>
@@ -114,6 +123,7 @@
 	</div>
 </footer>
 		<script src="js/jquery-3.3.1.min.js"></script>
+		<script src="js/parsley.js"></script>
 		<script src="js/main.js"></script>
 </body>
 </html>
