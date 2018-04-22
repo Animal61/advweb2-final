@@ -49,10 +49,53 @@ ul {
     list-style: none;
 }
 
+#schedule h2 {
+	text-align: center;
+}
+
+#left {
+	padding-left: 3%;
+}
+form {
+		width: 50%;
+		margin: auto;
+		padding: 0 10% 40px;
+}
+
+label {
+	font-weight: bold;
+}
+
+input {
+	padding: 5px;
+	border-radius: 5px;
+	margin: 10px;
+}
+
+input[type="checkbox"] {
+	margin-left: 10px;
+}
+
+button {
+	padding: 5px;
+	border-radius: 5px;
+}
+
+button[type="reset"] {
+	float: right;
+	display: inline-block;
+}
+
 img {
     width: 94%;
     margin: auto;
     padding: 0 3%;
+}
+
+.thumbnail {
+    width: 98%;
+    padding: 0 1%;
+    box-shadow: 2px 2px 2px 2px grey;
 }
 
 /* #walking,
@@ -92,6 +135,11 @@ footer ul li a:hover {
 /* Media Queries */
 @media (min-width: 800px) {
 
+    footer {
+        display: block;
+        clear: both;
+    }
+
     .left-50,
     .right-50 {
         display: inline-block;
@@ -113,5 +161,29 @@ footer ul li a:hover {
 
     #day-care {
         margin-right: 1%;
+    }
+
+    section#schedule {
+        display: inline-block;
+        width: 31%;
+        float: left;
+    }
+		
+		.thumbnail {
+		    width: 90%;
+		    margin: auto;
+		    box-shadow: 2px 2px 2px 2px grey;
+		}
+
+    form {
+        width: 50%;
+        margin: auto;
+        padding: 0 10% 40px;
+    }
+
+    aside {
+        display: inline-block;
+        width: 30%;
+        float: left;
     }
 }
