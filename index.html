@@ -1,94 +1,118 @@
 <!doctype html>
 <html lang="en">
+
 <head>
-		<meta charset="utf-8">
-		<title>Advanced Web 2 Final Project</title>
-		<meta name="description" content="">
-		<meta name="viewport" content="device=device-width, initial-scale=1.0" />
+	<meta charset="utf-8">
+	<title>Advanced Web 2 Final Project</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="device=device-width, initial-scale=1.0" />
 
-		<link rel="stylesheet" href="css/vendor/normalize.min.css">
-		<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/vendor/normalize.min.css" />
+	<link rel="stylesheet" href="css/main.css" />
+	
+	<!-- Wow Slider stylings -->
+	<link rel="stylesheet" href="styles/style.css"  />
 
-    <!-- Font Awesome CDN -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
-		
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Kurale" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+	<!-- Font Awesome CDN -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Kurale" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
 </head>
+
 <body>
-<header>
-	<nav>
-		<ul>
-			<li>
-				<a href="index.html">Home</a>
-			</li>
-			<li>
-				<a href="services.html">Services</a>
-			</li>
-			<li>
-				<a href="about.html">About Us</a>
-			</li>
-		</ul>
-	</nav>
-	<img src="img/logo.png" alt="Furry Friends logo" />
+	<header>
+		<nav>
+			<ul>
+				<li>
+					<a href="index.html">Home</a>
+				</li>
+				<li>
+					<a href="services.html">Services</a>
+				</li>
+				<li>
+					<a href="about.html">About Us</a>
+				</li>
+			</ul>
+		</nav>
+		<img src="img/logo.png" alt="Furry Friends logo" />
 
-	<h1>Furry Friends</h1>
-</header>
-<main>
-	<h2>Welcome to Furry Friends Sitting Service</h2>
-	<img src="img/pet-sitters-3.jpg" alt="Two dogs and three cats" />
-	<p>
-		We specialize in dog walking, drop-in check, day care. Ask us about our boarding and house sitting services as well.
-	</p>
-  <div class="center">
-		
+		<h1>Furry Friends</h1>
+	</header>
+	<main>
+		<h2>Welcome to Furry Friends Sitting Service</h2>
+		<!-- Start WOWSlider.com BODY section -->
+		<div id="wowslider-container">
+			<div class="ws_images">
+				<ul>
+					<li><img src="img/slider-1.jpg" alt="" title="" id="wows_0" /></li>
+					<li><img src="img/slider-2.jpg" alt="You can add description to slides!" title="You can add description to slides!" id="wows_1" /></li>
+					<li><img src="img/slider-3.jpg" alt="" title="" id="wows_2" /></li>
+				</ul>
+			</div>
+				<div class="ws_bullets">
+					<div>
+						<a href="#" title=""><img src="tooltips/slide1new.jpg" alt=""/>1</a>
+						<a href="#" title="You can add description to slides!"><img src="tooltips/slide2new.jpg" alt="You can add description to slides!"/>2</a>
+						<a href="#" title=""><img src="tooltips/slide3new.jpg" alt=""/>3</a>
+					</div>
+				</div>
+				<a href="#" class="ws_frame"></a>
+				<div class="ws_shadow"></div>
 
-	<section id="walking">
-		<h3>Walking</h3>
-		<img src="img/pet-sitters-9.jpg" alt="Walking the dog" />
-	</section>
-	<section id="drop-in">
-		<h3>Drop-in Checks</h3>
-		<img src="img/pet-sitters-2.jpg" alt="Boxer looking lonely" />
-	</section>
-	<section id="day-care">
-		<h3>Day Care</h3>
-		<img src="img/pet-sitters-12.jpg" alt="Cat daycare" />
-	</section>
 		</div>
-</main>
-<footer>
-	<div class="left-50">
 		<p>
-			Phone: (888) 555-1212
+			We specialize in dog walking, drop-in check, day care. Ask us about our boarding and house sitting services as well.
 		</p>
-		<p>
-			Email: <a href="mailto:sitters@furry-friends.com">sitters@furry-friends.com</a>
-		</p>
-		<p>
-			123 Main St., Anywhere MD, 20600 
-		</p>
-		<p>
-			Hours: By appointment<br />
-			<a href="schedule.html">Schedule an appointment</a>
-		</p>
-	</div>
-	<div class="right-50">
-		<ul>
-			<li>
-				<a href="http://www.facebook.com"><i class="fab fa-facebook-square fa-2x"></i></a>
-			</li>
-			<li>
-				<a href="http://www.linkedin.com"><i class="fab fa-linkedin fa-2x"></i></a>
-			</li>
-			<li>
-				<a href="http://www.twitter.com"><i class="fab fa-twitter-square fa-2x"></i></a>
-			</li>
-		</ul>
-	</div>
-</footer>
-		<script src="js/jquery-3.3.1.min.js"></script>
-		<script src="js/main.js"></script>
+		<div class="center">
+			<section id="walking">
+				<h3>Walking</h3>
+				<img src="img/pet-sitters-9.jpg" alt="Walking the dog" />
+			</section>
+			<section id="drop-in">
+				<h3>Drop-in Checks</h3>
+				<img src="img/pet-sitters-2.jpg" alt="Boxer looking lonely" />
+			</section>
+			<section id="day-care">
+				<h3>Day Care</h3>
+				<img src="img/pet-sitters-12.jpg" alt="Cat daycare" />
+			</section>
+		</div>
+	</main>
+	<footer>
+		<div class="left-50">
+			<p>
+				Phone: (888) 555-1212
+			</p>
+			<p>
+				Email: <a href="mailto:sitters@furry-friends.com">sitters@furry-friends.com</a>
+			</p>
+			<p>
+				123 Main St., Anywhere MD, 20600
+			</p>
+			<p>
+				Hours: By appointment<br />
+				<a href="schedule.html">Schedule an appointment</a>
+			</p>
+		</div>
+		<div class="right-50">
+			<ul>
+				<li>
+					<a href="http://www.facebook.com"><i class="fab fa-facebook-square fa-2x"></i></a>
+				</li>
+				<li>
+					<a href="http://www.linkedin.com"><i class="fab fa-linkedin fa-2x"></i></a>
+				</li>
+				<li>
+					<a href="http://www.twitter.com"><i class="fab fa-twitter-square fa-2x"></i></a>
+				</li>
+			</ul>
+		</div>
+	</footer>
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<srcipt src="js/wowslider.js"></srcipt>
+	<script src="js/main.js"></script>
 </body>
+
 </html>
