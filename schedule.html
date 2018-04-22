@@ -1,129 +1,132 @@
 <!doctype html>
 <html lang="en">
+
 <head>
-		<meta charset="utf-8">
-		<title>Advanced Web 2 Final Project</title>
-		<meta name="description" content="">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta charset="utf-8">
+	<title>Advanced Web 2 Final Project</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-		<link rel="stylesheet" href="css/vendor/normalize.min.css">
-		<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/vendor/normalize.min.css">
+	<link rel="stylesheet" href="css/main.css">
 
-    <!-- Font Awesome CDN -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
-		
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Kurale" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+	<!-- Font Awesome CDN -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Kurale" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
 </head>
+
 <body>
-<header>
-	<nav>
-		<ul>
-			<li>
-				<a href="index.html">Home</a>
-			</li>
-			<li>
-				<a href="services.html">Services</a>
-			</li>
-			<li>
-				<a href="about.html">About Us</a>
-			</li>
-		</ul>
-	</nav>
-	<img src="img/logo.png" alt="Furry Friends logo" />
+	<header>
+		<nav>
+			<ul>
+				<li>
+					<a href="index.html">Home</a>
+				</li>
+				<li>
+					<a href="services.html">Services</a>
+				</li>
+				<li>
+					<a href="about.html">About Us</a>
+				</li>
+			</ul>
+		</nav>
+		<img src="img/logo.png" alt="Furry Friends logo" />
 
-	<h1>Furry Friends</h1>
-</header>
-<main>
-	<aside id="left">
-		<p>
-			For furry felines
-		</p>
-		<img class="thumbnail" src="img/pet-sitters-6.jpg" alt="Dog walking" />
-		<p>
-			playful pups,
-		</p>
-		<img class="thumbnail" src="img/pet-sitters-11.jpg" alt="Ready for travel" />
-		
-	</aside>	
-	<section id="schedule">
-		
-	<h2>Schedule a visit</h2>
-<div class="bs-callout bs-callout-warning hidden">
-	<h4>Oh snap!</h4>
-	<p>This form seems to be invalid :(</p>
-</div>
+		<h1>Furry Friends</h1>
+	</header>
+	<main>
+		<aside id="left">
+			<p>
+				For furry felines
+			</p>
+			<img class="thumbnail" src="img/pet-sitters-6.jpg" alt="Dog walking" />
+			<p>
+				playful pups,
+			</p>
+			<img class="thumbnail" src="img/pet-sitters-11.jpg" alt="Ready for travel" />
 
-<div class="bs-callout bs-callout-info hidden">
-	<h4>Yay!</h4>
-	<p>Everything seems to be ok :)</p>
-</div>
-	<form id="request" method="post" action="" data-parsley-validate>
-		<label for="name">Name:</label>
-		<input type="text" name="name" placeholder="Enter your name"  required="" /><br />
-		<label for="phone">Phone:</label>
-		<input type="tel" name="phone" placeholder="xxx-xxx-xxxx"  required="" /><br />
-		<label for="email">Email:</label>
-		<input type="email" name="email" placeholder="Enter your email address" data-parsley-trigger="change" required="" /><br />
-		<label for="service">Service(s) request:</label><br />
-		<input type="checkbox" name="service" value="walking" data-parsely-mincheck="1">Walking<br />
-		<input type="checkbox" name="service" value="drop-in">Drop-in<br />
-		<input type="checkbox" name="service" value="walking">Boarding<br />
-		<input type="checkbox" name="service" value="drop-in">Daycare<br />
-		<label for="start">Start date</label>
-		<input type="date" name="start"><br />
-		<label for="end">End date</label>
-		<input type="date" name="end"><br />
-		<button type="submit" value="Submit">Submit</button>
-		<button type="reset" value="Reset">Reset</button>
-	</form>
-	
-</section>
-<aside id="right`">
-	<p>
-		or not so furry friends
-	</p>
-	<img class="thumbnail" src="img/pet-sitters-7.jpg" alt="Iguana" />
-	<p>
-		travel with worry!
-	</p>
-	<img class="thumbnail" src="img/pet-sitters-4.jpg" alt="Ready for travel" />
-	
-</aside>
-</main>
-<footer>
-	<div class="left-50">
-		<p>
-			Phone: (888) 555-1212
-		</p>
-		<p>
-			Email: <a href="mailto:sitters@furry-friends.com">sitters@furry-friends.com</a>
-		</p>
-		<p>
-			123 Main St., Anywhere MD, 20600 
-		</p>
-		<p>
-			Hours: By appointment<br />
-			<a href="schedule.html">Schedule an appointment</a>
-		</p>
-	</div>
-	<div class="right-50">
-		<ul>
-			<li>
-				<a href="http://www.facebook.com"><i class="fab fa-facebook-square fa-2x"></i></a>
-			</li>
-			<li>
-				<a href="http://www.linkedin.com"><i class="fab fa-linkedin fa-2x"></i></a>
-			</li>
-			<li>
-				<a href="http://www.twitter.com"><i class="fab fa-twitter-square fa-2x"></i></a>
-			</li>
-		</ul>
-	</div>
-</footer>
-		<script src="js/jquery-3.3.1.min.js"></script>
-		<script src="js/parsley.js"></script>
-		<script src="js/main.js"></script>
+		</aside>
+		<section id="schedule">
+
+			<h2>Schedule a visit</h2>
+			<div class="bs-callout bs-callout-warning hidden">
+				<h4>Oh snap!</h4>
+				<p>This form seems to be invalid :(</p>
+			</div>
+
+			<div class="bs-callout bs-callout-info hidden">
+				<h4>Yay!</h4>
+				<p>Everything seems to be ok :)</p>
+			</div>
+			<form id="request" method="post" action="" data-parsley-validate>
+				<label for="name">Name:</label>
+				<input type="text" name="name" placeholder="Enter your name" required="" /><br />
+				<label for="phone">Phone:</label>
+				<input type="tel" name="phone" placeholder="xxx-xxx-xxxx" required="" /><br />
+				<label for="email">Email:</label>
+				<input type="email" name="email" placeholder="Enter your email address" data-parsley-trigger="change" required="" /><br />
+				<label for="service">Service(s) request:</label><br />
+				<input type="checkbox" name="service" value="walking" data-parsely-mincheck="1">Walking<br />
+				<input type="checkbox" name="service" value="drop-in">Drop-in<br />
+				<input type="checkbox" name="service" value="walking">Boarding<br />
+				<input type="checkbox" name="service" value="drop-in">Daycare<br />
+				<label for="start">Start date</label>
+				<input type="date" name="start"><br />
+				<label for="end">End date</label>
+				<input type="date" name="end"><br />
+				<button type="submit" value="Submit">Submit</button>
+				<button type="reset" value="Reset">Reset</button>
+			</form>
+
+		</section>
+		<aside id="right`">
+			<p>
+				or not so furry friends
+			</p>
+			<img class="thumbnail" src="img/pet-sitters-7.jpg" alt="Iguana" />
+			<p>
+				travel with worry!
+			</p>
+			<img class="thumbnail" src="img/pet-sitters-4.jpg" alt="Ready for travel" />
+
+		</aside>
+	</main>
+	<footer>
+		<div class="left-50">
+			<p>
+				Phone: (888) 555-1212
+			</p>
+			<p>
+				Email: <a href="mailto:sitters@furry-friends.com">sitters@furry-friends.com</a>
+			</p>
+			<p>
+				123 Main St., Anywhere MD, 20600
+			</p>
+			<p>
+				Hours: By appointment<br />
+				<a href="schedule.html">Schedule an appointment</a>
+			</p>
+		</div>
+		<div class="right-50">
+			<ul>
+				<li>
+					<a href="http://www.facebook.com"><i class="fab fa-facebook-square fa-2x"></i></a>
+				</li>
+				<li>
+					<a href="http://www.linkedin.com"><i class="fab fa-linkedin fa-2x"></i></a>
+				</li>
+				<li>
+					<a href="http://www.twitter.com"><i class="fab fa-twitter-square fa-2x"></i></a>
+				</li>
+			</ul>
+		</div>
+	</footer>
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/parsley.js"></script>
+	<script src="js/main.js"></script>
 </body>
+
 </html>
