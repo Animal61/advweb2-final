@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="css/menu.css">
 </head>
 
-<body>
+<body onload="addItem();">
     <div class="page"> <span class="menu_toggle"> <i class="menu_open fa fa-bars fa-lg"></i> <i class="menu_close fa fa-times fa-lg"></i> </span>
         <ul class="menu_items">
             <li><a href="index.html"><i class="icon fa fa-home fa-2x"></i> Home</a></li>
@@ -42,18 +42,8 @@
 
                     </aside>
                     <section id="schedule">
-
                         <h2>Schedule a visit</h2>
-                        <div class="bs-callout bs-callout-warning hidden">
-                            <h4>Oh snap!</h4>
-                            <p>This form seems to be invalid :(</p>
-                        </div>
-
-                        <div class="bs-callout bs-callout-info hidden">
-                            <h4>Yay!</h4>
-                            <p>Everything seems to be ok :)</p>
-                        </div>
-                        <form id="request" method="post" action="" data-parsley-validate>
+                        <form id="request" method="post" action="mailto:sk.smith@ufl.edu" data-parsley-validate>
                             <label for="name">Name:</label>
                             <input type="text" name="name" placeholder="Enter your name" required="" /><br />
                             <label for="phone">Phone:</label>
@@ -102,15 +92,15 @@
                             </p>
                         </div>
                         <div class="right-50">
-                            <ul>
+                            <ul id="socialMedia">
                                 <li>
-                                    <a href="http://www.facebook.com"><i class="fab fa-facebook-square fa-2x"></i></a>
+                                    <a href="http://www.facebook.com"><i class="fa fa-facebook-square fa-2x"></i></a>
                                 </li>
                                 <li>
-                                    <a href="http://www.linkedin.com"><i class="fab fa-linkedin fa-2x"></i></a>
+                                    <a href="http://www.linkedin.com"><i class="fa fa-linkedin-square fa-2x"></i></a>
                                 </li>
                                 <li>
-                                    <a href="http://www.twitter.com"><i class="fab fa-twitter-square fa-2x"></i></a>
+                                    <a href="http://www.twitter.com"><i class="fa fa-twitter-square fa-2x"></i></a>
                                 </li>
                             </ul>
                         </div>
@@ -120,8 +110,8 @@
         </main>
     </div>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="js/parsley.js"></script>
     <script src="js/index.js"></script>
-    <srcipt src="js/wowslider.js"></srcipt>
     <script src="js/main.js"></script>
 </body>
 
