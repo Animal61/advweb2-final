@@ -45,20 +45,24 @@
                         <h2>Schedule a visit</h2>
                         <form id="request" method="post" action="mailto:sk.smith@ufl.edu" data-parsley-validate>
                             <label for="name">Name:</label>
-                            <input type="text" name="name" placeholder="Enter your name" required="" /><br />
+                            <input type="text" id="name" name="name" placeholder="Enter your name" required="" /><br />
                             <label for="phone">Phone:</label>
-                            <input type="tel" name="phone" placeholder="xxx-xxx-xxxx" required="" /><br />
+                            <input type="tel" id="phone" name="phone" placeholder="xxx-xxx-xxxx" required="" /><br />
                             <label for="email">Email:</label>
-                            <input type="email" name="email" placeholder="Enter your email address" data-parsley-trigger="change" required="" /><br />
-                            <label for="service">Service(s) request:</label><br />
-                            <input type="checkbox" name="service" value="walking" data-parsely-mincheck="1">Walking<br />
-                            <input type="checkbox" name="service" value="drop-in">Drop-in<br />
-                            <input type="checkbox" name="service" value="walking">Boarding<br />
-                            <input type="checkbox" name="service" value="drop-in">Daycare<br />
-                            <label for="start">Start date</label>
-                            <input type="date" name="start"><br />
+                            <input type="email" id="email" name="email" placeholder="Enter your email address" data-parsley-trigger="change" required="" /><br />
+                            <fieldset>
+                                <legend>
+                                    Service(s) request:
+                                </legend>
+                                <input type="checkbox" name="service" id="walk" value="walking" data-parsely-mincheck="1">Walking<br />
+                                <input type="checkbox" name="service" id="drop-in" value="drop-in">Drop-in<br />
+                                <input type="checkbox" name="service" id="board" value="walking">Boarding<br />
+                                <input type="checkbox" name="service" id="daycare" value="drop-in">Daycare<br />
+                            </fieldset>
+                                                        <label for="start">Start date</label>
+                            <input type="date" id="start"><br />
                             <label for="end">End date</label>
-                            <input type="date" name="end"><br />
+                            <input type="date" id="end"><br />
                             <button type="submit" value="Submit">Submit</button>
                             <button type="reset" value="Reset">Reset</button>
                         </form>
